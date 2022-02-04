@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arraySize = prompt('Введите порядковое число фибоначи','');
+     if (isNaN(arraySize))
+        alert('Некорректный ввод, введите числовое значение.');
+      else if (arraySize === null)
+        alert('Действие отменено.');
+      else if (arraySize.trim() == '')
+        alert('Вы не ввели значение');
+      else if (Number(arraySize) < 0)
+        alert('Нелья меньше 0');
+      else if(Number(arraySize) > 1476)
+            ('Ваше число слишком большое, оно переполнит 64-битное хранилище. Введите число меньше чем 1477 ')
+      else {
+    function fib(arraySize) {
+       const array = [Number(arraySize)];
+        array[0] = 0;
+        array[1] = 1; 
+        for (let i = 2; i <= arraySize; i++) {
+           array[i] = array[i-2] + array[i-1];
+        }
+        return array[array.length -1 ];
+      }
+    console.log('Значения порядкового числа' + ' ' +  arraySize+  ' = ' +   fib(arraySize));
+      }
+  </script>
+  
+</body>
+</html>

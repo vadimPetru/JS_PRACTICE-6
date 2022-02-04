@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Пример 3 с массивами</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    const compact = (array) => array.filter((el) => el);
+      const data = [0, 1, false, 2, undefined, '', 3, null];
+      console.log('Исходный массив:');
+      console.log(data); // [0, 1, false, 2, undefined, '', 3, null]
+      console.log('Использование функции , которая очищает массив от нежелательных значений, таких как false, undefined, пустые строки, ноль, null:');
+      console.log(compact(data)) // [1, 2, 3]
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script> 
+    const delDuplicate = (a1) => {
+      for (let i = 0; i < a1.length - 1; i++) {
+        for (let j = i + 1; j < a1.length; j++) {
+          if (a1[i] == a1[j]) {
+          a1.splice(j, 1);
+          }
+        }
+      }
+        return a1;
+    }
+        console.log('Исходный массив:');
+        let a1 = [9, 5, 7, 8, 5, 7, 3, 3, 5, 4, 9, 7, 4, 3, 6, 7, 8, 9, 7, 6, 5, 4];
+        console.log(a1);
+        console.log('Массив без повторяющихся примитивных значений:');
+        let a2 = delDuplicate(a1);
+        console.log(a2);
+    </script>
+</body>
+</html>

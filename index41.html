@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Arrays1</title>
+</head>
+
+<body>
+   <script type="text/javascript">
+    const fill = (arraySize, value) => new Array(arraySize).fill(value);
+      const data = prompt('Введите значения размерности массива:', '');
+      if (isNaN(data))
+      alert('Некорректный ввод, введите числовое значение.');
+      else if (data === null)
+      alert('Действие отменено.');
+      else if (data.trim() == '')
+      alert('Вы не ввели значение');
+      else if (Number(data) <0)
+      alert('Нелья меньше 0');
+      else{
+    const valueToFill = prompt('Введите значения элементов массива:', '');
+      console.log('Полученный массив');
+      console.log(fill(Number(data), valueToFill));
+    }
+  </script>
+
+
+</html>

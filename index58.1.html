@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const starter = [101,20,44,55,99,-23,10000];
+    console.log('Начальный массив:' + starter );
+    const Filtr = [];
+    let Index = 0;
+    for(let index = 0 ; index < starter.length ; index++)
+    {
+      if(Number(starter[index])>= 99)
+      {
+        
+        Filtr[Index] = starter[index];
+        Index ++;
+       
+      }
+    }
+     console.log('Отфильтрованный  массив, все элементы которого больше или равны  99, а все меньшие 99 удалены. ' );
+     console.log(Filtr);
+  </script>
+</body>
+</html>

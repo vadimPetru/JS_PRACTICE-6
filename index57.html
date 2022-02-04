@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log('Исходный массив:')
+    let a1 = [5, 6, 1, 30, 8, 0, 2, 10, 4];
+    console.log(a1);
+    console.log('С помощью функции sort отсортируем исходный массив по возрастанию\nНовый массив:');
+    let a2 = a1.sort(function (a, b) { return a - b });
+    console.log(a2);
+  </script>
+</body>
+</html>
